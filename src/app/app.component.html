@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Email</th>
+  </tr>
+
+  <tr *ngFor="let user of users">
+    <td>{{user._id}}</td>
+    <td>{{user.email}}</td>
+  </tr>
+  <tr>
+    <td><button (click)="fetchdata()">new user details</button></td>
+  </tr>
+</table>
